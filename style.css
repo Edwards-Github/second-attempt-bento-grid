@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400 500;
+  src: local("DMSans"), url(assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400 500;
+  src:
+    local("DMSans-Italic"),
+    url(assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+:root {
+  /* Colors  */
+  --Purple-100: hsl(254, 88%, 90%);
+  --Purple-500: hsl(256, 67%, 59%);
+
+  --Yellow-100: hsl(31, 66%, 93%);
+  --Yellow-500: hsl(39, 100%, 71%);
+
+  --White: hsl(0, 0%, 100%);
+  --Off-White: hsl(0, 0%, 96%);
+  --Black: hsl(0, 0%, 7%);
+
+  /* Font sizes  */
+  --fs-paragraph: 1.125rem;
+  --fs-header-2: 2.125rem;
+  --fs-header-1: 3.125rem;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  figure {
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@layer base {
+  html {
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.3;
+  }
+
+  body {
+    margin: 32px;
+    color: var(--Black);
+    font-size: var(--fs-paragraph);
+    background-color: var(--Off-White);
+  }
+
+  h1,
+  h2 {
+    color: var(--heading-color, inherit);
+    font-size: var(--heading-font-size, var(--fs-header-2));
+    line-height: 1.1;
+    text-wrap: balance;
+
+    span {
+      display: var(--heading-span-display, inline);
+      color: var(--heading-span-color, var(--Black));
+      font-size: var(--heading-span-font-size, inherit);
+      font-style: var(--heading-span-style, normal);
+    }
+  }
+}
