@@ -230,7 +230,8 @@
     @media (min-width: 992px) {
       --heading-font-size: calc(var(--fs-header-2) * 0.9);
       --bento-card-horizontal-alignment: start;
-      --bento-card-vertical-alignment: space-between;
+      --bento-card-vertical-alignment: center;
+      --bento-card-gap: 20px;
       text-align: start;
 
       > img {
@@ -303,8 +304,8 @@
     @media (min-width: 992px) {
       --bento-card-image-width: 100%;
       --bento-card-gap: 20px;
-      --bento-card-vertical-alignment: end;
-      --heading-font-size: calc(var(--fs-header-2) * 1.25);
+      --bento-card-vertical-alignment: space-between;
+      --heading-font-size: calc(var(--fs-header-2) * 1);
     }
   }
 }
