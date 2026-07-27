@@ -184,6 +184,7 @@
   .bento-grid > :nth-child(2) {
     --bento-card-image-order: -1;
     --heading-font-size: calc(var(--fs-header-2) * 0.75);
+    --bento-card-vertical-alignment: center;
     grid-area: two;
 
     > img {
@@ -193,22 +194,24 @@
 
     @media (min-width: 992px) {
       --heading-font-size: calc(var(--fs-header-2) * 0.8);
+      --bento-card-image-width: 150%;
     }
   }
 
   .bento-grid > :nth-child(3) {
     --bento-card-background-color: var(--Yellow-500);
     --heading-font-size: calc(var(--fs-header-2) * 0.8);
+    --bento-card-image-width: 75%;
+    --bento-card-vertical-alignment: center;
     grid-area: three;
 
     > img {
-      --bento-card-image-width: 75%;
       transform: translate(0, 40px);
+      align-self: end;
+    }
 
-      @media (min-width: 992px) {
-        --bento-card-image-width: 100%;
-        transform: translate(0, 70px);
-      }
+    @media (min-width: 992px) {
+      --bento-card-image-width: 100%;
     }
   }
 
