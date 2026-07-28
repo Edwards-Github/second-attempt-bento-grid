@@ -26,8 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
+<img width="1565" height="1028" alt="image" src="https://github.com/user-attachments/assets/0c04c023-82c6-4840-9fcf-9b7db886031e" />
 
 ### Links
 
