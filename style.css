@@ -194,7 +194,7 @@
 
     @media (min-width: 992px) {
       --heading-font-size: var(--fs-header-2);
-      --bento-card-image-width: 160%;
+      --bento-card-image-width: 155%;
       --bento-card-vertical-alignment: space-between;
     }
   }
@@ -215,7 +215,7 @@
       --bento-card-image-width: 100%;
       --heading-font-size: var(--fs-header-2);
       > img {
-        margin-bottom: -45px;
+        margin-bottom: -60px;
       }
     }
   }
@@ -263,7 +263,7 @@
 
   .bento-grid > :nth-child(6) {
     --heading-font-size: calc(var(--fs-header-2) * 1.5);
-    --heading-font-weight: 600;
+    --heading-font-weight: 500;
     --bento-card-image-width: 65%;
     grid-area: six;
 
